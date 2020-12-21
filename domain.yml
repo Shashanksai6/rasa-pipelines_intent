@@ -1,0 +1,93 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- greet
+- goodbye
+- affirm
+- request
+- brands
+- models
+- location
+- year
+- gearbox
+- seller-type
+- phone
+- distance
+- consumption
+- price
+- power
+- size
+- interior-color
+- exterieure-color
+- seller_name
+- energy
+- thanks
+- deny
+
+entities:
+- KILOMETRE
+- date
+- region
+- car_brand
+- models
+- request
+- km
+- price
+- power
+
+slots:
+  brands: 
+    type: unfeaturized
+  models:
+    type: unfeaturized
+  distance:
+    type: unfeaturized
+  year:
+    type: unfeaturized
+  price:
+    type: unfeaturized
+  power:
+    type: unfeaturized
+  seller-type:
+    type: unfeaturized
+
+responses:
+  utter_greet:
+  - text: Hello! I'm an eCommerce bot. I can help you to buy or sell a car or other
+      facilities in your preferred car
+  utter_request:
+  - text: Are you interested in buying or selling cars?
+  utter_queries:
+  - text: Will you answer few questions for us to understand your choices?
+  utter_ask_brands:
+  - text: Which car brands do you need to buy?
+  utter_ask_models:
+  - text: Which model do you need?
+  utter_ask_distance:
+  - text: How about distance in KM?
+  utter_ask_year:
+  - text: what year of production is car in?
+  utter_ask_price:
+  - text: please, Determine car price?
+  utter_ask_power:
+  - text: what is the power of your car in KW?
+  utter_ask_seller-type:
+  - text: What is your favorite vendor?
+  utter_ask_thanks:
+  - text: you are very welcome :)
+  utter_ask_goodbye:
+  - text: goodbye
+  utter_slot_values:
+  - text: "You've submitted the following answers:\n
+            - brands: {brands}\n
+            - models: {models}\n
+            - distance: {distance}\n
+            - year: {year}\n
+            - price: {price}\n
+            - power: {power}\n
+            - seller-type: {seller-type}"
+
+forms: 
+  - car_form
