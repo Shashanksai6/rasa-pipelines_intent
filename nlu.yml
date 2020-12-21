@@ -1,0 +1,325 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - perfect
+    - very good
+
+- intent: brands 
+  examples: |
+    - [Audi](car_brand)
+    - [Bmw](car_brand)
+    - [Citroen](car_brand)
+    - [Dacia](car_brand)
+    - [Fiat](car_brand)
+    - [Ford](car_brand)
+    - [Mercedes](car_brand)
+    - [Nissan](car_brand)
+    - [Opel](car_brand)
+    - [Peugeot](car_brand)
+    - [Renault](car_brand)
+    - [Toyota](car_brand)
+    - [Volkswagen](car_brand)
+
+- intent: models
+  examples: |
+    - [1.0i](models)
+    - [1.1i SX](models)
+    - [1,2I 12V](models)
+    - [1.2 PureTech 110ch S](models)
+    - [1.2 60 eco2 Authentique](models)
+    - [1.3 GLX](models)
+    - [1.4i Classic](models)
+    - [1.4i 16V Initiale A](models)
+    - [1.4 16v Confort Authentique](models)
+    - [1.4 HDi Urban ***vente marchande](models)
+    - [1.6 HDi 110 FAP Exclusive](models)
+    - [1.6 HDI 92 CV Pack Clim](models)
+    - [1.6 16V Pack Confort A](models)
+    - [1.6I 115CH LS BA 5P](models)
+    - [1.6 TDCi - 90 Trend TBG .... 2100E](models)
+    - [1.8i 16V TBG 1890E](models)
+    - [1.8 i 90 CV Cabriolet Edition Karman](models)
+    - [1.8 TDCi GHIA](models)
+    - [1.9 TDI / Boite Automatique](models)
+    - [2008](models)
+    - [208](models)
+    - [2.0 CRDi 136 CV](models)
+    - [2.0 HDI 110](models)
+    - [2.0 16V Conquest](models)
+    - [2.0 dCi 150 Dynamique **Vente Marchande**](models)
+    - [2.0 L 115 Ch Ann\u00e9e 1990](models)
+    - [3008](models)
+    - [308](models)
+    - [500](models)
+    - [80 16V 131585kms 1790\u20ac](models)
+    - [AFFAIRE 1.4 HDI ENTREPRISE 2 CTTE](models)
+    - [C3](models)
+    - [Captur](models)
+    - [CC 2.0 16V - 180ch](models)
+    - [Clio](models)
+    - [D5 185CH FAP h.s SUMMUM 5 PLACES](models)
+    - [Evolution 2.0T Privilge Proactive A](models)
+    - [FGTTE 600KG 1.9D CLUB ENTREPRISE](models)
+    - [Golf](models)
+    - [II 1.2 LEV 16v 75 eco2*** Vente \u00e0 Marchand](models)
+    - [II 1.5 dCi 85 Dynamique Extreme Design' **VENDU**](models)
+    - [II FG L1H1 2T8 2.2 DCI 90CH](models)
+    - [Kadjar](models)
+    - [Megane](models)
+    - [Matra Bagheera S d\u00e9couvrable](models)
+    - [Scenic](models)
+    - [Sport Pack](models)
+    - [SERIE 3 TOURING E91 Touring 163ch pack M sport](models)
+    - [SW 1.6 HDi 110ch FAP BVM6 BLUE LION Navteq](models)
+    - [SW 2.0 HDi 16v Ex\u00e9cutive](models)
+    - [Twingo](models)
+    - [Test Listing for AT](models)
+    - [Vendue. Vous recherchez un v\u00e9hicule demandez-nous](models)
+
+- intent: location
+  examples: |
+    - [Alsace](region)
+    - [Aquitaine](region)
+    - [Auvergne](region)
+    - [Ardenne](region)
+    - [Burgundy](region)
+    - [Brittany](region)
+    - [Center](region)
+    - [Corsica](region)
+    - [Charentes](region)
+    - [Franche](region)
+    - [Ile-de-France](region)
+    - [Lower-Normandy](region)
+    - [Loire-Country](region)
+    - [Languedoc](region)
+    - [Lorraine](region)
+    - [Limousin](region)
+    - [Midi-Pyrenees](region)
+    - [Nord-Pas-de-Calais](region)
+    - [Picardie](region)
+    - [Provence-Alpes-Côte-d'Azur](region)
+    - [Rhône-Alpes](region)
+    - [Upper-Normandy](region)
+
+- intent: request
+  examples: |
+    - I want to [buy a car](request)
+    - I want to [sell a car](request)
+    - I want to [buy car](request)
+    - I want to [sell car](request)
+    - [buy car](request)
+    - [sell car](request)
+    - [buying car](request)
+    - [selling car](request)
+    - [buy](request)
+    - [sell](request)
+
+- intent: gearbox
+  examples: |
+    - automatic
+    - mechanical
+
+- intent: seller-type
+  examples: |
+    - individual
+    - dealer 
+    - agent
+    - multi-brand-center
+    - renter
+    - garagiste
+    - approved-repairer
+    - Vendeur professionnel
+
+- intent: phone
+  examples: |
+    - +33 (0)3 - 22666600
+    - +33 (0)7 - 78568604
+    - +33 (0)4 - 78707608
+    - +33 (0)1 - 74596684
+    - +33 (0)3 - 89322911
+    - +33 (0)6 - 34537585
+    - +33 (0)3 - 82243922
+    - +33 (0)1 - 41640442
+    - +33 (0)7 - 71189444
+
+- intent: year
+  examples: |
+    - [12/2018](date)
+    - [03/2007](date)
+    - [01/2006](date)
+    - [09/2005](date)
+    - [03/2003](date)
+    - [04/2013](date)
+    - [05/2009](date)
+    - [07/2005](date)
+    - [03/2007](date)
+    - [01/1998](date)
+    - [02/2000](date)
+    - [09/2004](date)
+    - [10/2001](date)
+    - [08/2002](date)
+    - [02/2006](date)
+    - [10/2000](date)
+    - [06/2009](date)
+    - [10/2005](date)
+    - [11/1999](date)
+    - [12/2004](date)
+    - [04/1978](date)
+    - [09/2006](date)
+    - [09/1995](date)
+    - [01/2017](date)
+    - [08/2006](date)
+    - [01/2010](date)
+    - [07/2007](date)
+    - [04/2012](date)
+    - [12/2001](date)
+    - [03/1997](date)
+    - [04/2005](date)
+    - [01/2010](date)
+    - [02/2008](date)
+    - [01/2005](date)
+    - [06/2007](date)
+    - [06/2003](date)
+    - [06/2003](date)
+    - [05/2007](date)
+    - [05/2008](date)
+    - [01/1990](date)
+    - [05/2006](date)
+
+- intent: distance
+  examples: |
+    - [23](km)
+    - [227.000](km)
+    - [540.000](km)
+    - [145.000](km)
+    - [275.000](km)
+    - [52.269](km)
+    - [188.500](km)
+    - [201.601](km)
+    - [267.000](km)
+    - [182.370](km)
+    - [215.800](km)
+
+- intent: consumption
+  examples: |
+    - [4L/100km](KILOMETRE)
+    - [5L/100km](KILOMETRE)
+    - [6L/100km](KILOMETRE)
+    - [7L/100km](KILOMETRE)
+    - [9L/100km](KILOMETRE)
+    - [13L/100km](KILOMETRE)
+    - [17L/100km](KILOMETRE)
+
+- intent: price
+  examples: |
+    - [500€](price)
+    - [1000€](price)
+    - [5000€](price)
+    - [68954€](price)
+    - [25580€](price)
+
+- intent: power
+  examples: |
+    - [00](power)
+    - [23](power)
+    - [72](power)
+    - [58](power)
+    - [44](power)
+    - [81](power)
+    - [50](power)
+
+- intent: size
+  examples: |
+    - length
+    - width
+    - height
+
+- intent: interior-color
+  examples: |
+    - beige
+    - white
+    - blue
+    - fauve
+    - grey
+    - ivory
+    - brown
+    - black
+    - red
+    
+- intent: exterieure-color
+  examples: |
+    - silver
+    - beige
+    - white
+    - blue
+    - bordeaux
+    - gris
+    - ivoire
+    - yellow
+    - marron
+
+- intent: seller_name
+  examples: |
+    - Musterstadt
+    - POULAINVILLE
+
+- intent: energy
+  examples: |
+    - diesel
+    - gasoline
+    - electric
+    - hybrids
+    - gasoline/LPG-bifuel
+    - bioethanol gasoline bifuel
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
