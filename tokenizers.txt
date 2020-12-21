@@ -1,0 +1,27 @@
+various pipelines:
+
+MitieNLP
+
+SpacyNLP
+
+MitieFeaturizer
+
+SpacyFeaturizer
+
+NGramFeaturizer
+
+CountVectorsFeaturizer
+
+supervised_embeddings
+
+
+RegexFeaturizer
+WhitespaceTokenizer
+JiebaTokenizer
+MitieTokenizer
+SpacyTokenizer
+MitieEntityExtractor
+SpacyEntityExtractor
+EntitySynonymMapper
+CRFEntityExtractor
+DucklingHTTPExtractor
